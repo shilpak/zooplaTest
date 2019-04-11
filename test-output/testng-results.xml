@@ -1,21 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="17419" started-at="2019-04-10T02:28:05Z" finished-at="2019-04-10T02:28:23Z">
+  <suite name="Default suite" duration-ms="79299" started-at="2019-04-11T02:36:40Z" finished-at="2019-04-11T02:37:59Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="17419" started-at="2019-04-10T02:28:05Z" finished-at="2019-04-10T02:28:23Z">
-      <class name="com.zoopla.qa.testcases.LondonSalePageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.zoopla.qa.testcases.LondonSalePageTest@f6c48ac]" name="setUp" is-config="true" duration-ms="13787" started-at="2019-04-10T02:28:05Z" finished-at="2019-04-10T02:28:19Z">
+    <test name="Default test" duration-ms="79299" started-at="2019-04-11T02:36:40Z" finished-at="2019-04-11T02:37:59Z">
+      <class name="com.zoopla.qa.testcases.PropertyPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.zoopla.qa.testcases.PropertyPageTest@f6c48ac]" name="setUp" is-config="true" duration-ms="15836" started-at="2019-04-11T02:36:40Z" finished-at="2019-04-11T02:36:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="priceCountTest()[pri:2, instance:com.zoopla.qa.testcases.LondonSalePageTest@f6c48ac]" name="priceCountTest" duration-ms="3585" started-at="2019-04-10T02:28:19Z" finished-at="2019-04-10T02:28:23Z">
+        <test-method status="PASS" signature="verifyPropertySalePageheadingTest()[pri:1, instance:com.zoopla.qa.testcases.PropertyPageTest@f6c48ac]" name="verifyPropertySalePageheadingTest" duration-ms="56" started-at="2019-04-11T02:36:56Z" finished-at="2019-04-11T02:36:56Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- priceCountTest -->
-      </class> <!-- com.zoopla.qa.testcases.LondonSalePageTest -->
+        </test-method> <!-- verifyPropertySalePageheadingTest -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.zoopla.qa.testcases.PropertyPageTest@f6c48ac]" name="setUp" is-config="true" duration-ms="14720" started-at="2019-04-11T02:36:56Z" finished-at="2019-04-11T02:37:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="agentLogoTest()[pri:2, instance:com.zoopla.qa.testcases.PropertyPageTest@f6c48ac]" name="agentLogoTest" duration-ms="75" started-at="2019-04-11T02:37:11Z" finished-at="2019-04-11T02:37:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- agentLogoTest -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.zoopla.qa.testcases.PropertyPageTest@f6c48ac]" name="setUp" is-config="true" duration-ms="15155" started-at="2019-04-11T02:37:11Z" finished-at="2019-04-11T02:37:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="agentNameTest()[pri:3, instance:com.zoopla.qa.testcases.PropertyPageTest@f6c48ac]" name="agentNameTest" duration-ms="55" started-at="2019-04-11T02:37:26Z" finished-at="2019-04-11T02:37:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- agentNameTest -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.zoopla.qa.testcases.PropertyPageTest@f6c48ac]" name="setUp" is-config="true" duration-ms="15185" started-at="2019-04-11T02:37:26Z" finished-at="2019-04-11T02:37:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="agentPhoneTest()[pri:4, instance:com.zoopla.qa.testcases.PropertyPageTest@f6c48ac]" name="agentPhoneTest" duration-ms="99" started-at="2019-04-11T02:37:41Z" finished-at="2019-04-11T02:37:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- agentPhoneTest -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.zoopla.qa.testcases.PropertyPageTest@f6c48ac]" name="setUp" is-config="true" duration-ms="15266" started-at="2019-04-11T02:37:41Z" finished-at="2019-04-11T02:37:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="propertyAgentLabelTest()[pri:5, instance:com.zoopla.qa.testcases.PropertyPageTest@f6c48ac]" name="propertyAgentLabelTest" duration-ms="2788" started-at="2019-04-11T02:37:56Z" finished-at="2019-04-11T02:37:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- propertyAgentLabelTest -->
+      </class> <!-- com.zoopla.qa.testcases.PropertyPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

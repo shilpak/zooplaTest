@@ -3,16 +3,17 @@ package com.zoopla.qa.testcases;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-
 import com.zoopla.qa.base.TestBase;
 import com.zoopla.qa.pages.LondonSalePage;
 import com.zoopla.qa.pages.MainPage;
+import com.zoopla.qa.pages.PropertyPage;
 import com.zoopla.qa.util.TestUtil;
 
 public class LondonSalePageTest extends TestBase {
 	MainPage mainPage;
 	TestUtil testUtil;
 	LondonSalePage londonSalePage;
+	PropertyPage propertyPage;
 	
 	public LondonSalePageTest() {
 		//calling the constructor testbase class
@@ -35,11 +36,17 @@ public class LondonSalePageTest extends TestBase {
 		
 	}
 	
-	@Test(priority=2)
-	public void priceCountTest() throws InterruptedException {
-		int price = londonSalePage.priceListValues();
-		Assert.assertEquals(price, 25);
+	@Test
+	public void checkpriceInt() {
+	 Boolean sorted = londonSalePage.priceOrder();
+	 Assert.assertTrue(sorted, "numbers are not reverse sorted");
 	}
+	
+	@Test
+	public void individualPropertyPageTitle() {
+		propertyPage = londonSalePage.clickOnFifth();	
+	}
+
 	
 
 }
