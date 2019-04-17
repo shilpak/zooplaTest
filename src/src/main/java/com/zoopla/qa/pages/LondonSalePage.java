@@ -17,6 +17,9 @@ public class LondonSalePage extends TestBase {
 
 	@FindBy(xpath=("//h1[contains(text(),'Property for sale in London')]"))
 	WebElement pageHeading;
+	
+	@FindBy(xpath=("//li[contains(@id,'listing_')]//a[contains(@class, 'price')]"))
+	List <WebElement> propertiesPriceList;
 
 	public LondonSalePage() {		
 		//here 'this' means current class object
@@ -27,25 +30,21 @@ public class LondonSalePage extends TestBase {
 		return pageHeading.isDisplayed();
 	}
 
-	public boolean priceOrder() {
+	public void priceOrder() {
 		List<Integer> values = new ArrayList<Integer>();
-		List<WebElement> items = driver.findElements(By.xpath("//ul[@data-role='listview']/li//a[@class='listing-results-price text-price']"));		
-		for(WebElement e:items) {
+		for(WebElement e:propertiesPriceList) {
 			values.add(Integer.parseInt(e.getText().replaceAll("\\D", "")));
 		}
 		/* Sorting in decreasing (descending) order*/
-		List<Integer> sortvalues = new ArrayList<Integer>();
+		//List<Integer> sortvalues = new ArrayList<Integer>();
 		Collections.sort(values, Collections.reverseOrder());
 		System.out.println("ArrayList in descending order:");
-		for(Integer num: values){
-			sortvalues.add(num);
-		}
-		return  Ordering.natural().reverse().isOrdered(sortvalues);
+
 	}
 	
 	public PropertyPage clickOnFifth() {
-		List<WebElement> items = driver.findElements(By.xpath("//ul[@data-role='listview']/li//a[@class='listing-results-price text-price']"));		
-		WebElement ele = items.get(5);
+
+		WebElement ele = propertiesPriceList.get(5);
 		TestUtil.JavaScriptClick(ele);
 		return new PropertyPage();	
 		

@@ -1,9 +1,6 @@
 package com.zoopla.qa.pages;
 
-import java.util.ArrayList;
-import java.util.List;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -23,8 +20,7 @@ public class PropertyPage extends TestBase{
 	@FindBy(xpath="//div[@class='dp-grid-wrapper']//p[@class='ui-agent__tel ui-agent__text']")
 	WebElement agentPhone;
 	
-	@FindBy(xpath="//h1[@class='bottom-half']/b")
-	WebElement agentPageLabel;
+	public String AgentName;
 	
 	public PropertyPage() {		
 		//here 'this' means current class object
@@ -51,9 +47,10 @@ public class PropertyPage extends TestBase{
 		return phoneNum;		
 	}
 	
-	public boolean propertyAgentLabel() {		
+	public AgentsDetailPage propertyAgentLabel() {	
+		AgentName = agentName.getText();
 		agentName.click();
-		return agentPageLabel.isDisplayed();
+		return new AgentsDetailPage();
 		
 	}
 	
